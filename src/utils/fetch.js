@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
 //For util function for fetching data
-const fetchData = (url) => {
+const fetch_data = (url) => {
   return fetch(url)
     .then((res) => res.json())
     .then((json) => {
@@ -10,5 +10,5 @@ const fetchData = (url) => {
 };
 
 module.exports = {
-  fetchData,
+  fetch_data,
 };

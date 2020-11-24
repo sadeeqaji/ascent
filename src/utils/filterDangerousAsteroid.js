@@ -1,4 +1,4 @@
-const filterDangeoursAsteroid = (array, x, y) => {
+const filter_dangeours_asteroid = (array, x, y) => {
   const keys = Object.keys(array);
 
   //the api return list of asteroid from start_date and end_date
@@ -52,5 +52,5 @@ const filterDangeoursAsteroid = (array, x, y) => {
 };
 
 module.exports = {
-  filterDangeoursAsteroid,
+  filter_dangeours_asteroid,
 };
