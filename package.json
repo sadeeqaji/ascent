@@ -1,0 +1,24 @@
+{
+  "name": "ascent",
+  "version": "0.0.0",
+  "description": "ascent is awesome!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node -r dotenv/config server.js",
+    "dev": "nodemon -r dotenv/config server.js dotenv_config_path=./.env.dev"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "nodemon": "^1.19.4"
+  }
+}
