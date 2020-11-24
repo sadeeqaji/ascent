@@ -1,15 +1,8 @@
 # ascent
 
-This project was generated with [BàngáJS](https://bangajs.netlify.app/) v1.0.0.  
+This project shows the last 20 asteroid that are dangrous that are potentially dangerous to us using [NASA API](https://api.nasa.gov/api.html#NeoWS) given a distance X (km) and a diameter Y (km) as paramters. A dangerous asteroid is defined as an object whose distance from Earth is less than X meters and whose diameter is bigger or equal than Y meters.
 
 ## Installation
-
-1. Install dependencies - `npm install`
-
-2. Create a new file `.env` if it doesn't exist and copy the contents of `env.dev` into it to be able to run your server on production environment. 
-
-3. Then you need to provide values for the configuration env files at the `src/config/env directory`.
-
 
 ## Running the server locally
 
@@ -17,22 +10,10 @@ This project was generated with [BàngáJS](https://bangajs.netlify.app/) v1.0.0
 
 2. Server should be running on http://localhost:2020/ by default
 
-## Code scaffolding
-
-Run `banga generate <type> <name>` to generate a new file types. Visit [here](https://bangajs.netlify.app/#banga-generate) for more info.
-
 ## Routes
 
-| Routes                                                           | Description                              | Auth roles                            |
-| -----------------------------------------------------------------|----------------------------------------- | ------------------------------------- |
-| [POST] &nbsp; /api/auth/sign-up                                  | Create a new account                     | none                                     
-| [POST] &nbsp; /api/auth/sign-in                                  | User sign in                             | none                                      
-| [POST] &nbsp; /api/auth/request-email-verification               | Resend verfication email                 | none                                     
-| [POST] &nbsp; /api/auth/verify-email                             | Email verification                       | none                                     
-| [POST] &nbsp; /api/auth/request-password-reset                   | Sends a request password email           | none                                      
-| [POST] &nbsp; /api/auth/reset-password                           | Reset password form handler              | none                                      
-| [POST] &nbsp; /api/users                                         | Create a user                            | User                                  
-| [GET] &nbsp; /api/users                                          | Get all users                            | Admin                                 
-| [GET] &nbsp; /api/users/:userId                                  | Get a user                               | User                                  
-| [UPDATE] &nbsp; /api/users/::userId                              | Update a user                            | User                                  
-| [DELETE] &nbsp; /api/users/:userId                               | Delete a user                            | Admin                                 
+| Routes                                              | Description                            |
+| --------------------------------------------------- | -------------------------------------- |
+| handler                                             |                                        |
+| [POST] &nbsp; /api/asteroid/get-dangerous?x=20&y=30 | Get list of 20 last dangerous asteroid |
+| [GET] &nbsp; /api/asteroid/get-all                  | Get all all asteroid                   |
